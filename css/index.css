@@ -354,7 +354,3 @@ img {
   display: flex;
   flex-direction: row-reverse;
 }
-.home .flexNormal {
-  display: flex;
-  flex-direction: row-reverse;
-}
