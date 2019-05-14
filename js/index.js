@@ -4,10 +4,9 @@ let navA = document.querySelectorAll('nav > a')
 
 navA[3].addEventListener('click', event => {alert(`We don't want to talk to you!`)})
 
-let colors = ['lightblue','green','pink','yellow']
+let colors = ['lightblue','green','pink','yellow','green','blue','crimson']
 navA.forEach((x,i) => {x.addEventListener('mouseover', event => {x.style.background = colors[i]})})
 navA.forEach(x => {x.addEventListener('click', event => {event.preventDefault()})})
-
 
 let midContent1 = document.querySelector('.mc1')
 let midContent2 = document.querySelector('.mc2')
@@ -28,4 +27,4 @@ buttons.forEach((x) => x.addEventListener('dblclick', event => {event.stopPropag
 buttons.forEach((x) => x.addEventListener('click', event => {event.stopPropagation(); if (x.textContent === 'Hey! Stop that!') {alert(`Okay well now this is happening`); body.style.background = 'black'; header.style.background = 'black'; x.textContent = 'Now look what you did'}}))
 
 let destinations = document.querySelectorAll('.destination')
-destinations.forEach(x => {x.addEventListener('click', event => {x.style.color = 'blue'})})
+destinations.forEach((x,i) => {x.addEventListener('click', event => {x.style.color = colors[i+4]})})
