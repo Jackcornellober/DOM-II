@@ -350,3 +350,7 @@ img {
   background: #FFFFFF;
   color: #17A2B8;
 }
+.home .flexReverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
